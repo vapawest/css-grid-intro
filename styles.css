@@ -8,8 +8,10 @@
 */
 
 .equal-columns {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 
 /* ========================================
    Demo 2: Unequal Columns
@@ -22,7 +24,8 @@
 */
 
 .unequal-columns {
-
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
 }
 
 /* ========================================
@@ -36,6 +39,9 @@
 */
 
 .gap-demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .5rem;
 
 }
 
@@ -50,11 +56,15 @@
 */
 
 .span-demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 
 }
 
 /* ⬇︎ This item will span across all three columns. */
 .wide-box {
+  grid-column: span 3;
 
 }
 
@@ -69,6 +79,10 @@
 */
 
 .layout-demo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+
 
 }
 
@@ -87,14 +101,19 @@
 */
 
 .challenge-grid {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .challenge-main {
-
+  display: grid;
+  grid-column: span 2;
 }
 
 .challenge-wide {
+  display: grid;
+  grid-column: span 3;
 
 }
 
